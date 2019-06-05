@@ -1,7 +1,6 @@
 -- CREATE SCHEMA Mibac;
 
 -- USE Mibac;
-
 CREATE TABLE Tipologie(
 	id_tipologia VARCHAR(10),
 	nome_tipologia VARCHAR(60),
@@ -18,6 +17,7 @@ CREATE TABLE Province(
 	id_provincia INT,
 	nome_provincia VARCHAR(40),
 	id_regione INT,
+	targa VARCHAR(2)
 	PRIMARY KEY (id_provincia),
 	FOREIGN KEY (id_regione) REFERENCES Regioni(id_regione)
 );
